@@ -1,2 +1,2 @@
 # RAGEMP
-All my releasted stuff for RAGE MP.
+All my released stuff for RAGE MP.
