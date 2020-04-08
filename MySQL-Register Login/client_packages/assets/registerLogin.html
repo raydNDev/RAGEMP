@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	
+	<div id = "Main-Bar">
+		<font face = "Arial" color = "white">
+			<center>
+				<a>Herzlich willkommen auf SERVERNAME. Bitte fülle die Felder aus, um dir einen Account bei uns anzulegen oder dich in einen bereits vorhandenen Account einzuloggen.<br>
+				Dein Name muss mindestens drei und dein Passwort mindestens fünf Zeichen lang sein.</a><br>
+				<b>Username:</b>
+				<input type = "text" name = "loginName" id = "loginName">
+				<b>Passwort:</b>
+				<input type = "password" name = "loginPass" id = "loginPass">
+				<button onclick = "sendAccountInfos(1)"><span>Einloggen</span></button>
+				<button onclick = "sendAccountInfos(0)"><span>Registrieren</span></button>
+			</center>
+		</font>
+	</div>
+	
+	<script>
+		function sendAccountInfos(type) {
+			let loginName = document.getElementById("loginName").value;
+			let loginPass = document.getElementById("loginPass").value;
+			mp.trigger("registerLogin.client",loginName,loginPass,type);
+		};
+	</script>
+</html>

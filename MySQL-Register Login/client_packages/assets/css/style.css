@@ -1,0 +1,17 @@
+@charset "utf-8";
+* { padding: 0; margin: 0; }
+
+#Main-Bar {
+	background-color: rgba(42,42,42,0.7);
+	text-align: left;
+	height: 60px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-left: 7px;
+	border-bottom: 1px solid rgb(58,58,58);
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 999;
+}
