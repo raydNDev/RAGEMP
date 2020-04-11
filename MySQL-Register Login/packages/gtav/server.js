@@ -16,7 +16,7 @@ var connection = mysql.createConnection( {
 	host: "localhost", 
 	user: "root",
 	password: "",
-	database: "gtav"
+	database: "gtav",
 });
 
 
